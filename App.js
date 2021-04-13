@@ -9,54 +9,72 @@ export default function App() {
   const [Owins, setOwins] = useState(0);
   const [player1, setplayer1] = useState();
   const [player2, setplayer2] = useState();
-  const circlepoint=()=>{
-
-  }
+  const circlepoint = () => {
+    setOwins(Owins + 1);
+  };
+  const crosspoints = () => {
+    setXwins(Xwins + 1);
+  };
   return (
     <View style={styles.container}>
       <Text>Tic Tac Toe</Text>
-      <View style={styles.button}>
-        <Pressable>
-          <Button title={circle} onPress={circlepoint}color="grey" />
-        </Pressable>
-        <Pressable>
-          <Button title={cross} color="orange" />
-        </Pressable>
+      <View style={{ flexDirection: "row" }}>
+        <View style={{ width: 100 }}>
+          <Pressable style={styles.button}>
+            <Button title={circle} color="grey" />
+          </Pressable>
+        </View>
+        <View style={{ width: 100 }}>
+          <Pressable style={styles.button}>
+            <Button title={cross} color="orange" />
+          </Pressable>
+        </View>
 
-        <Pressable>
-          <Button title={circle} color="grey" />
-        </Pressable>
-
-        <StatusBar style="auto" />
+        <View style={{ width: 100 }}>
+          <Pressable style={styles.button}>
+            <Button title={cross} color="orange" />
+          </Pressable>
+        </View>
       </View>
-      <View style={styles.button}>
-        <Pressable>
-          <Button title={cross} color="orange" />
-        </Pressable>
-        <Pressable>
-          <Button title={circle} color="grey" />
-        </Pressable>
 
-        <Pressable>
-          <Button title={cross} color="orange" />
-        </Pressable>
+      <View style={{ flexDirection: "row" }}>
+        <View style={{ width: 100 }}>
+          <Pressable style={styles.button}>
+            <Button title={circle} color="grey" />
+          </Pressable>
+        </View>
+        <View style={{ width: 100 }}>
+          <Pressable style={styles.button}>
+            <Button title={cross} color="orange" />
+          </Pressable>
+        </View>
 
-        <StatusBar style="auto" />
+        <View style={{ width: 100 }}>
+          <Pressable style={styles.button}>
+            <Button title={cross} color="orange" />
+          </Pressable>
+        </View>
       </View>
-      <View style={styles.button}>
-        <Pressable>
-          <Button title={circle} color="grey" />
-        </Pressable>
-        <Pressable>
-          <Button title={cross} color="orange" />
-        </Pressable>
+      <View style={{ flexDirection: "row" }}>
+        <View style={{ width: 100 }}>
+          <Pressable style={styles.button}>
+            <Button title={circle} color="grey" />
+          </Pressable>
+        </View>
+        <View style={{ width: 100 }}>
+          <Pressable style={styles.button}>
+            <Button title={cross} color="orange" />
+          </Pressable>
+        </View>
 
-        <Pressable>
-          <Button title={cross} color="orange" />
-        </Pressable>
-
-        <StatusBar style="auto" />
+        <View style={{ width: 100 }}>
+          <Pressable style={styles.button}>
+            <Button title={cross} color="orange" />
+          </Pressable>
+        </View>
       </View>
+      <StatusBar style="auto" />
+
       <Text> player 1:0</Text>
     </View>
   );
@@ -71,9 +89,15 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   button: {
-    margin: 10,
-
-    padding: 10,
     flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#DDDDDD",
+    color: "#000000",
+    borderColor: "#FF0000",
+    height: 80,
+    borderTopWidth: 0,
+    borderLeftWidth: 0,
+    borderWidth: 2,
+    padding: 10,
   },
 });
