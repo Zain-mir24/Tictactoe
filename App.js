@@ -3,50 +3,54 @@ import React, { useState } from "react";
 import { StyleSheet, Text, View, Button, Pressable } from "react-native";
 
 export default function App() {
-  const [value, setvalue] = useState("Dummy value");
+  const [circle, setcircle] = useState("0");
+  const [cross,setcross]=useState("x")
+  const [Xwins,setXwins]=useState(0)
+  const [Owins,Owins]=useState(0)
   const [player1, setplayer1] = useState();
   const [player2, setplayer2] = useState();
+
   return (
     <View style={styles.container}>
       <Text>Tic Tac Toe</Text>
       <View style={styles.button}>
         <Pressable>
-          <Button title="0" color="grey" />
+          <Button title={circle} color="grey" />
         </Pressable>
         <Pressable>
-          <Button title="x" color="orange" />
-        </Pressable>
-
-        <Pressable>
-          <Button title="O" color="grey" />
-        </Pressable>
-
-        <StatusBar style="auto" />
-      </View>
-      <View style={styles.button}>
-        <Pressable>
-          <Button title="x" color="orange" />
-        </Pressable>
-        <Pressable>
-          <Button title="O" color="grey" />
+          <Button title={cross} color="orange" />
         </Pressable>
 
         <Pressable>
-          <Button title="x" color="orange" />
+          <Button title={circle} color="grey" />
         </Pressable>
 
         <StatusBar style="auto" />
       </View>
       <View style={styles.button}>
         <Pressable>
-          <Button title="O" color="grey" />
+          <Button title={cross} color="orange" />
         </Pressable>
         <Pressable>
-          <Button title="x" color="orange" />
+          <Button title={circle}color="grey" />
         </Pressable>
 
         <Pressable>
-          <Button title="x" color="orange" />
+          <Button title={cross} color="orange" />
+        </Pressable>
+
+        <StatusBar style="auto" />
+      </View>
+      <View style={styles.button}>
+        <Pressable>
+          <Button title={circle} color="grey" />
+        </Pressable>
+        <Pressable>
+          <Button title={cross} color="orange" />
+        </Pressable>
+
+        <Pressable>
+          <Button title={cross} color="orange" />
         </Pressable>
 
         <StatusBar style="auto" />
