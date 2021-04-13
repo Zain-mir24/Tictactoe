@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { StyleSheet, Text, View, Button, Pressable } from "react-native";
 
 export default function App() {
-  const [value, setvalue] = useState();
+  const [value, setvalue] = useState("Dummy value");
   const [player1, setplayer1] = useState();
   const [player2, setplayer2] = useState();
   return (
@@ -11,7 +11,7 @@ export default function App() {
       <Text>Tic Tac Toe</Text>
       <View style={styles.button}>
         <Pressable>
-          <Button title="O"  color="grey" />
+          <Button title="0" color="grey" />
         </Pressable>
         <Pressable>
           <Button title="x" color="orange" />
