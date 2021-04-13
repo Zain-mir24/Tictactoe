@@ -5,8 +5,8 @@ import { StyleSheet, Text, View, Button, Pressable } from "react-native";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <View style={stylingbuttons.container}>
+      <Text>Tic Tac Toe</Text>
+      <View style={styles.button}>
         <Pressable>
           <Button  title="O" color="orange" />
         </Pressable>
@@ -20,7 +20,7 @@ export default function App() {
 
         <StatusBar style="auto" />
       </View>
-      <View style={stylingbuttons.container}>
+      <View style={styles.button}>
         <Pressable>
           <Button title="O" color="orange" />
         </Pressable>
@@ -34,7 +34,7 @@ export default function App() {
 
         <StatusBar style="auto" />
       </View>
-      <View style={stylingbuttons.container}>
+      <View style={styles.button}>
         <Pressable>
           <Button title="O" color="orange" />
         </Pressable>
@@ -60,12 +60,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-});
-
-const stylingbuttons=StyleSheet.create({
-  container:{
+  button:{
     margin:10,
+    
     padding:10,
     flexDirection:'row'
-  }
-})
+  },
+});
+
