@@ -11,7 +11,7 @@ export default function App() {
       <Text>Tic Tac Toe</Text>
       <View style={styles.button}>
         <Pressable>
-          <Button title="O" color="grey" />
+          <Button title="O"  color="grey" />
         </Pressable>
         <Pressable>
           <Button title="x" color="orange" />
