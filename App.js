@@ -4,18 +4,20 @@ import { StyleSheet, Text, View, Button, Pressable } from "react-native";
 
 export default function App() {
   const [circle, setcircle] = useState("0");
-  const [cross,setcross]=useState("x")
-  const [Xwins,setXwins]=useState(0)
-  const [Owins,Owins]=useState(0)
+  const [cross, setcross] = useState("x");
+  const [Xwins, setXwins] = useState(0);
+  const [Owins, setOwins] = useState(0);
   const [player1, setplayer1] = useState();
   const [player2, setplayer2] = useState();
+  const circlepoint=()=>{
 
+  }
   return (
     <View style={styles.container}>
       <Text>Tic Tac Toe</Text>
       <View style={styles.button}>
         <Pressable>
-          <Button title={circle} color="grey" />
+          <Button title={circle} onPress={circlepoint}color="grey" />
         </Pressable>
         <Pressable>
           <Button title={cross} color="orange" />
@@ -32,7 +34,7 @@ export default function App() {
           <Button title={cross} color="orange" />
         </Pressable>
         <Pressable>
-          <Button title={circle}color="grey" />
+          <Button title={circle} color="grey" />
         </Pressable>
 
         <Pressable>
