@@ -1,7 +1,7 @@
 import React from 'react'
 import {Button} from 'react-native'
 
-function square({value,onClick}) {
+function Square({value,onClick}) {
   const style=value?styles.square`${value}`:styles.square
     return (
         <div>
@@ -15,4 +15,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default square
+export default Square
