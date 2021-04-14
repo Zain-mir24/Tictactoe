@@ -2,10 +2,10 @@ import React from 'react'
 import {Button} from 'react-native'
 
 function square({value,onClick}) {
-  const style=value?`squares${value}`:`squares`
+  const style=value?styles.square`${value}`:styles.square
     return (
         <div>
-            <Button style={styles.square} onClick={onClick}>{value}</Button>
+            <Button style={style} onClick={onClick}>{value}</Button>
         </div>
     )
 }
