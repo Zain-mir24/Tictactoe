@@ -24,6 +24,10 @@ function Game() {
         <div>
                <h1>React Tic Tac toe with hooks</h1> 
                <Board squares={history[stepnumber]} onClick={handleClick} />
+               <div>
+                   <h3>History of moves</h3>
+                   <h3>{winner?"winner"+winner:"Next player"+xO}</h3>
+               </div>
             </div>
     )
 }
