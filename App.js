@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { render } from "react-dom";
 import { StyleSheet, Text, View, Button, Pressable} from "react-native";
 
+
+//this is the logic to basically render tic tac toe
 const RButton=()=>{
   const [value,setvalue]=useState('')
     return(
